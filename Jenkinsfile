@@ -1,10 +1,9 @@
-/* Requires the Docker Pipeline plugin */
 pipeline {
-    agent any{ 
-        label 'Python'
+    agent {
+        label 'python'
     }
     stages {
-        stage('build') {
+        stage('Run Python Script') {
             steps {
                 sh 'python3 p.py'
             }
