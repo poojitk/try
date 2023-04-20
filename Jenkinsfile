@@ -1,10 +1,10 @@
 pipeline {
-    agent {
-    }
+    agent 
+    
     stages {
         stage('Run Python Script') {
             steps {
-                sh 'python3 p.py'
+                sh 'python3 script.py'
             }
         }
     }
